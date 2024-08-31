@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "ec07456e-a395-4c0f-a142-90c4021dbfa4",
+		"name": "ContactListAPIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13640266"
+	},
+	"item": [
+		{
+			"name": "POSTCALL",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDQyNTB9.mL8qTDrEjWFKNKYontnxKpJGUvfL3srMncYHv6zHX3k",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Priti\",\r\n    \"lastName\": \"Doe\",\r\n    \"birthdate\": \"1995-01-01\",\r\n    \"email\": \"bhoyar.priti693@gmail.com\",\r\n    \"phone\": \"8005555555\",\r\n    \"street1\": \"1 Main St.\",\r\n    \"street2\": \"Apartment A\",\r\n    \"city\": \"Anytown\",\r\n    \"stateProvince\": \"MH\",\r\n    \"postalCode\": \"12345\",\r\n    \"country\": \"INDIA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETCALL",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDUyNDZ9.mY2GLexODPim-Jc4MQlyopApQNXMt6RIPDhU7k_uWDU ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETCALL  For Specific",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDUyNDZ9.mY2GLexODPim-Jc4MQlyopApQNXMt6RIPDhU7k_uWDU ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUTCALL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDQyNTB9.mL8qTDrEjWFKNKYontnxKpJGUvfL3srMncYHv6zHX3k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDUyNDZ9.mY2GLexODPim-Jc4MQlyopApQNXMt6RIPDhU7k_uWDU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Priti-update\",\r\n    \"lastName\": \"Doe\",\r\n    \"birthdate\": \"1995-01-01\",\r\n    \"email\": \"bhoyar.priti693@gmail.com\",\r\n    \"phone\": \"8005555555\",\r\n    \"street1\": \"Civil line,chandani chowk\",\r\n    \"street2\": \"Juni dharmashala\",\r\n    \"city\": \"Anytown\",\r\n    \"stateProvince\": \"MH\",\r\n    \"postalCode\": \"12345\",\r\n    \"country\": \"INDIA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDQyNTB9.mL8qTDrEjWFKNKYontnxKpJGUvfL3srMncYHv6zHX3k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE0MDUyNDZ9.mY2GLexODPim-Jc4MQlyopApQNXMt6RIPDhU7k_uWDU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Anna\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/",
+					"protocol": "https",
+					"host": [
+						"thinking-tester-contact-list",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "tokenId",
+			"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjlhOGI1YTk5NjRmMDAwMTM2MTk0ODMiLCJpYXQiOjE3MjE3NTcwNzN9.-vj300MwzT0mHBvxAgdNiGYP9MTdw30dNch-sP-rl2c",
+			"type": "string"
+		}
+	]
+}

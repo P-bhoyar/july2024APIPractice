@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "d89c01d2-1ff5-4288-8cb5-0f8ce9db2126",
+		"name": "Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13640266"
+	},
+	"item": [
+		{
+			"name": "getuser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
